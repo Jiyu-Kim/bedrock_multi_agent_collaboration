@@ -20,9 +20,9 @@ agent_yaml_path = os.path.join(current_dir, "agents.yaml")
 
 if __name__ == '__main__':
     export_report_tool = {
-        "code": f"arn:aws:lambda:{region}:{account_id}:function:export-report",
+        "code": f"arn:aws:lambda:{region}:{account_id}:function:export_report",
         "definition": {
-            "name": "export-report",
+            "name": "export_report",
             "description": "Convert markdown-formatted report into a PDF file and Export it to S3",
             "parameters": {
                 "markdown_report": {
