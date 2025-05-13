@@ -202,5 +202,5 @@ formatted-report-writer-agent:
     - Do NOT include any explanation, commentary, or additional text outside the Markdown itself.  
     - Call the `export_report` Lambda function to convert the Markdown to a PDF and upload it to Amazon S3 Bucket.  
     - MUST extract the Amazon S3 presigned URL from the Lambda function's response.  
-    - MUST return the AMazon S3 presigned URL to your supervisor.  
+    - MUST return the FULL Amazon S3 presigned URL with AWSAccessKeyId to your supervisor.  
   llm: us.anthropic.claude-3-5-sonnet-20241022-v2:0
